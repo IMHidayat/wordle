@@ -7,6 +7,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        test: {
+          "0%, 100%": { transform: "scaleY(1)" },
+          "50%": { transform: "scaleY(0)" },
+        },
+      },
+      animation: {
+        test: "test .75s ease-in-out forwards",
+      },
       container: {
         center: true,
       },
